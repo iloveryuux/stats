@@ -1,6 +1,2 @@
-export function truncateText(description: string) {
-	if (description.length > 30) {
-		return description.substring(0, 30) + '...'
-	}
-	return description
-}
+export const truncateText = (text: string, maxLength = 30) =>
+	text.length > maxLength ? `${text.substring(0, maxLength)}...` : text
