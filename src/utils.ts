@@ -7,7 +7,7 @@ export const truncateText = (text: string | null, maxLength = 30): string => {
 	return text.length > maxLength ? `${text.substring(0, maxLength)}...` : text
 }
 
-export const displayTable = (data: TableData): void => {
+export const displayTable = (data: UserData | RepoData): void => {
 	const head = Object.keys(data)
 	const rows = [Object.values(data)]
 
