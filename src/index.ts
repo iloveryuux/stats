@@ -1,9 +1,11 @@
 import Table from 'cli-table3'
+import { truncateText } from './utils'
+
 const args = process.argv.slice(2)
 
-if(args.length < 2) {
-  console.error(`[-] Use: <username> <repo>`)
-  process.exit(1)
+if (args.length < 2) {
+	console.error(`[-] Use: <username> <repo>`)
+	process.exit(1)
 }
 
 const userGithub = args[0]
@@ -17,9 +19,9 @@ const { name, description, stargazers_count, forks_count } =
 
 const table = new Table({
 	head: ['Name', 'Description', ' Stars', ' Forks'],
-  style: {
-    head: ['cyan'],
-  }
+	style: {
+		head: ['cyan'],
+	},
 })
 
 table.push([
@@ -30,10 +32,3 @@ table.push([
 ])
 
 console.log(table.toString())
-
-function truncateText(description: string) {
-  if(description.length > 30) {
-    return description.substring(0, 30) + '...'
-  }
-  return description
-}
