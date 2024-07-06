@@ -1,0 +1,28 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"formatter": {
+		"ignore": ["tsconfig.*"]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"enabled": true,
+			"arrowParentheses": "asNeeded",
+			"semicolons": "asNeeded",
+			"quoteProperties": "asNeeded",
+			"quoteStyle": "single",
+			"trailingCommas": "es5",
+			"bracketSameLine": false,
+			"bracketSpacing": true,
+			"lineEnding": "lf"
+		}
+	}
+}
