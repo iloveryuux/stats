@@ -1,5 +1,5 @@
 import { displayTable } from './utils'
-import { userData, repoData } from './github'
+import { userData, repoData } from './services/github'
 
 const args = process.argv.slice(2)
 
