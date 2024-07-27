@@ -1,4 +1,4 @@
-import { base_url, truncateText } from '../utils'
+import { base_url, truncateText } from '../../utils'
 
 export const repoData = async (username: string, repo: string) => {
 	const url = `${base_url}/repos/${username}/${repo}`

@@ -1,4 +1,4 @@
-import { base_url } from '../utils'
+import { base_url } from '../../utils'
 
 export const userData = async (username: string) => {
 	const url = `${base_url}/users/${username}`
